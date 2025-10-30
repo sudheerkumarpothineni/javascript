@@ -42,4 +42,17 @@
     Object.fromEntries() - Converts array into object
     --------------------
     let obj = Object.entries(array);
+
+    Combination of filter and map
+    -----------------------------
+    let students = [
+        { name: "Ravi", marks: 45 },
+        { name: "Sudheer", marks: 72 },
+        { name: "Kiran", marks: 88 },
+        { name: "Manoj", marks: 33 }
+    ];
+
+    let result = students
+                .filter(s => s.marks > 45)
+                .map(s => s.name.toLowerCase());
 */
